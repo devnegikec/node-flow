@@ -1,0 +1,294 @@
+/* Node Design System - Utility Classes */
+
+/* === BASE NODE CONTAINER === */
+.node-base {
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  min-height: 80px;
+  width: 200px;
+}
+
+.node-base-wide {
+  width: 220px;
+}
+
+.node-base-narrow {
+  width: 180px;
+}
+
+/* === NODE VARIANTS BY TYPE === */
+.node-input {
+  color: rgb(101, 99, 228);
+  padding: 10px;
+  border: 1px solid #e4e4e7;
+}
+
+.node-output {
+  background-color: #fce4ec;
+  border: 1px solid #e4e4e7;
+}
+
+.node-text {
+  background-color: #f3e5f5;
+  border: 1px solid #e4e4e7;
+}
+
+.node-llm {
+  background-color: #fff3e0;
+  border: 2px solid #ff9800;
+}
+
+.node-filter {
+  background-color: #fff3e0;
+  border: 2px solid #ff9800;
+}
+
+.node-transform {
+  background-color: #e8f5e9;
+  border: 2px solid #4caf50;
+}
+
+.node-aggregator {
+  background-color: #e3f2fd;
+  border: 2px solid #2196f3;
+}
+
+.node-validator {
+  background-color: #fce4ec;
+  border: 2px solid #e91e63;
+}
+
+.node-delay {
+  background-color: #f3e5f5;
+  border: 2px solid #9c27b0;
+}
+
+/* === TYPOGRAPHY === */
+.node-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.node-title-input {
+  color: #0d47a1;
+}
+
+.node-title-output {
+  color: #880e4f;
+}
+
+.node-title-text {
+  color: #4a148c;
+}
+
+.node-title-llm {
+  color: #e65100;
+}
+
+.node-title-filter {
+  color: #e65100;
+}
+
+.node-title-transform {
+  color: #2e7d32;
+}
+
+.node-title-aggregator {
+  color: #0d47a1;
+}
+
+.node-title-validator {
+  color: #880e4f;
+}
+
+.node-title-delay {
+  color: #4a148c;
+}
+
+.node-description {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* === FIELD CONTAINERS === */
+.node-field {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.node-field-inline {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* === LABELS === */
+.node-label {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.node-label-inline {
+  margin-bottom: 0;
+  margin-left: 8px;
+}
+
+/* === INPUTS === */
+.node-input-base {
+  padding: 6px 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.node-input-base:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+}
+
+.node-input-text {
+  width: 100%;
+}
+
+.node-input-number {
+  width: 100%;
+}
+
+.node-input-email {
+  width: 100%;
+}
+
+/* === TEXTAREA === */
+.node-textarea {
+  padding: 6px 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.node-textarea:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+}
+
+/* === SELECT === */
+.node-select {
+  padding: 6px 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.node-select:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+}
+
+/* === CHECKBOX === */
+.node-checkbox {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+/* === SLIDER === */
+.node-slider {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* === UTILITY CLASSES === */
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-3 {
+  margin-bottom: 12px;
+}
+
+.mt-1 {
+  margin-top: 4px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 4px;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+/* === HANDLE STYLES (optional overrides) === */
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #555;
+}
+
+.react-flow__handle-left {
+  left: -5px;
+}
+
+.react-flow__handle-right {
+  right: -5px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .node-base {
+    width: 180px;
+  }
+
+  .node-base-wide {
+    width: 200px;
+  }
+}
