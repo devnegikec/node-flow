@@ -80,11 +80,22 @@ export const PipelineUI = () => {
             });
 
             const nodeID = getNodeID(type);
+            // const newNode = {
+            //   id: nodeID,
+            //   type,
+            //   position,
+            //   data: getInitNodeData(nodeID, type),
+            // };
             const newNode = {
               id: nodeID,
               type,
               position,
-              data: getInitNodeData(nodeID, type),
+              data: {
+                ...getInitNodeData(nodeID, type),
+                // Add this line:
+                // 'inputName' must match the 'name' property in your inputNodeConfig
+                inputName: nodeID, 
+              },
             };
       
             addNode(newNode);

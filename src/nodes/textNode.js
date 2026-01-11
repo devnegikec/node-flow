@@ -10,7 +10,7 @@ const selector = (state) => ({
 
 export const TextNode = ({ id, data }) => {
     const { syncEdges } = useStore(selector, shallow);
-    const [text, setText] = useState(data?.text || '{{input_1}}');
+    const [text, setText] = useState(data?.text || '');
 
     useEffect(() => {
         // Regex to find variables inside {{ }}

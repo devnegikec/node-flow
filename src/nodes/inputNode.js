@@ -13,7 +13,6 @@ const inputNodeConfig = {
       name: 'inputName',
       type: 'text',
       label: 'Name:',
-      defaultValue: 'input_'
     },
     {
       name: 'inputType',
